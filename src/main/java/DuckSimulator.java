@@ -9,7 +9,10 @@ public class DuckSimulator {
         Duck adapter = new TurkeyAdapter(turkey);
         adapter.fly();
         adapter.quack();
+
+        Drone drone = new SuperDrone();
+        DroneAdapter droneAdapter = new DroneAdapter(drone);
+        droneAdapter.quack();
+        droneAdapter.fly();
     }
 }
-
-
